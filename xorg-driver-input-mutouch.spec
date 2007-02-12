@@ -1,5 +1,5 @@
 Summary:	X.org input driver for MicroTouch devices
-Summary(pl.UTF-8):   Sterownik wejściowy X.org dla urządzeń MicroTouch
+Summary(pl.UTF-8):	Sterownik wejściowy X.org dla urządzeń MicroTouch
 Name:		xorg-driver-input-mutouch
 Version:	1.1.0
 Release:	0.1
