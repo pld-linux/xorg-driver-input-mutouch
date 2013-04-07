@@ -1,0 +1,11 @@
+--- xf86-input-mutouch-1.3.0/configure.ac~	2011-06-28 03:31:46.000000000 +0200
++++ xf86-input-mutouch-1.3.0/configure.ac	2013-04-07 21:37:46.179040596 +0200
+@@ -35,7 +35,7 @@
+ DRIVER_NAME=mutouch
+ AC_SUBST([DRIVER_NAME])
+ 
+-AM_CONFIG_HEADER([config.h])
++AC_CONFIG_HEADERS([config.h])
+ 
+ # Checks for programs.
+ AC_DISABLE_STATIC

@@ -2,11 +2,12 @@ Summary:	X.org input driver for MicroTouch devices
 Summary(pl.UTF-8):	Sterownik wejściowy X.org dla urządzeń MicroTouch
 Name:		xorg-driver-input-mutouch
 Version:	1.3.0
-Release:	5
+Release:	6
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-input-mutouch-%{version}.tar.bz2
 # Source0-md5:	d84374b3eecc2d7156f5b694e79f66ac
+Patch0:		am.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -29,6 +30,7 @@ Sterownik wejściowy X.org dla urządzeń MicroTouch.
 
 %prep
 %setup -q -n xf86-input-mutouch-%{version}
+%patch0 -p1
 
 %build
 %{__libtoolize}
